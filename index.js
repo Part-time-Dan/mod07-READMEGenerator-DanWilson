@@ -40,7 +40,7 @@ const questions = [
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) { //data is given in starter code, ask TA how I supposed to call this? Should inquirer have gone somewhere else?
 
-    fileName = "testREADME.md"; // will name the file "README.md" which is universally understood as the standard
+    fileName = "README.md"; // will name the file "README.md" which is universally understood as the standard
     console.log(fileName);
     inquirer
     .prompt(questions)
