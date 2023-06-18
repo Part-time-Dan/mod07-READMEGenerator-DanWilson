@@ -10,30 +10,40 @@ const questions = [
         name: 'title',
         message: 'What is the title of this project?',
     },
+    // {
+    //     type: 'input',
+    //     name: 'description',
+    //     message: 'Please describe your project goal and objectives in a few sentences:',
+    // },
+    // {
+    //     type: 'input',
+    //     name: 'installation',
+    //     message: 'Are there any installation instructions the user must follow?',
+    // },
+    // {
+    //     type: 'input',
+    //     name: 'usage',
+    //     message: 'How is your project or application used?',
+    // },
+    // {
+    //     type: 'input',
+    //     name: 'contribution',
+    //     message: 'How can others contribute to this project?',
+    // },
+    // {
+    //     type: 'input',
+    //     name: 'tests',
+    //     message: 'Are there any test instructions or criteria for this application?',
+    // },
     {
-        type: 'input',
-        name: 'description',
-        message: 'Please describe your project goal and objectives in a few sentences:',
-    },
-    {
-        type: 'input',
-        name: 'installation',
-        message: 'Are there any installation instructions the user must follow?',
-    },
-    {
-        type: 'input',
-        name: 'usage',
-        message: 'How is your project or application used?',
-    },
-    {
-        type: 'input',
-        name: 'contribution',
-        message: 'How can others contribute to this project?',
-    },
-    {
-        type: 'input',
-        name: 'tests',
-        message: 'Are there any test instructions or criteria for this application?',
+        type: 'list',
+        name: 'license',
+        message: 'Which license is your project using?',
+        choices: [
+            "MIT",
+            "Apache 2.0",
+            "GPLv3"
+        ],
     },
 ];
 
