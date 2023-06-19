@@ -6,36 +6,46 @@ const generateMarkdown = require('./utils/generateMarkdown');
 
 // TODO: Create an array of questions for user input
 const questions = [
-    // {
-    //     type: 'input',
-    //     name: 'title',
-    //     message: 'What is the title of this project?',
-    // },
-    // {
-    //     type: 'input',
-    //     name: 'description',
-    //     message: 'Please describe your project goal and objectives in a few sentences:',
-    // },
-    // {
-    //     type: 'input',
-    //     name: 'installation',
-    //     message: 'Are there any installation instructions the user must follow?',
-    // },
-    // {
-    //     type: 'input',
-    //     name: 'usage',
-    //     message: 'How is your project or application used?',
-    // },
-    // {
-    //     type: 'input',
-    //     name: 'contribution',
-    //     message: 'How can others contribute to this project?',
-    // },
-    // {
-    //     type: 'input',
-    //     name: 'tests',
-    //     message: 'Are there any test instructions or criteria for this application?',
-    // },
+    {
+        type: 'input',
+        name: 'title',
+        message: 'What is the title of this project?',
+    },
+    {
+        type: 'input',
+        name: 'description',
+        message: 'Please describe your project goal and objectives in a few sentences:',
+    },
+    {
+        type: 'input',
+        name: 'installation',
+        message: 'Are there any installation instructions the user must follow?',
+    },
+    {
+        type: 'input',
+        name: 'usage',
+        message: 'How is your project or application used?',
+    },
+    {
+        type: 'input',
+        name: 'contribution',
+        message: 'How can others contribute to this project?',
+    },
+    {
+        type: 'input',
+        name: 'tests',
+        message: 'Are there any test instructions or tests designed for this application?',
+    },
+    {
+        type: 'input',
+        name: 'github',
+        message: 'What is your GitHub username so others can find your work?'
+    },
+    {
+        type: 'input',
+        name: 'email',
+        message: 'What email address would you like share with others so they can contact you about this project?'
+    },
     {
         type: 'list',
         name: 'license',
@@ -57,9 +67,7 @@ function writeToFile(fileName, data) { //how should I be calling "data" here?
     inquirer
     .prompt(questions)
     .then((answer) => {
-        // const license = `${answer.lisence}`
         const newFile = generateMarkdown(answer);
-        // console.log(license);
         console.log(newFile);
 
         fs.writeFile(fileName, newFile, (err) =>
