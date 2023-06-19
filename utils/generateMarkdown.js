@@ -4,18 +4,21 @@ function renderLicenseBadge(license) {
 
   switch (license) {
     case 'MIT':
-      license = '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)';
-      // console.log(mitBadge);
+      licenseValue = 'MIT';
+      licenseLink = '(https://choosealicense.com/licenses/mit/)'
+      license = '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://choosealicense.com/licenses/mit/)';
       break;
 
     case 'Apache 2.0':
-      license = `[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)`
-      // console.log(mitBadge);
+      licenseValue = 'Apache 2.0';
+      licenseLink = '(https://choosealicense.com/licenses/apache-2.0/)'
+      license = `[![License: Apache 2.0](https://img.shields.io/badge/License-Apache_2.0-orange.svg)]${licenseLink}`
       break;
 
     case 'GPLv3':
-      license = `[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)`
-      // console.log(gplv3Badge);
+      licenseValue = 'GPL v3'
+      licenseLink = `(https://choosealicense.com/licenses/gpl-3.0/)`
+      license = `[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)]${licenseLink}`
       break;
 
     default:
@@ -30,7 +33,10 @@ function renderLicenseBadge(license) {
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
-function renderLicenseLink(license) {}
+function renderLicenseLink(license) {
+  license = licenseLink;
+  return license;
+}
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
@@ -42,7 +48,12 @@ function generateMarkdown(data) {
 
   license = `${data.license}`
 
-return `${renderLicenseBadge(license)}
+return `
+BADGE
+${renderLicenseBadge(license)}
+
+LINK
+${renderLicenseLink(license)}
 
 ## License
 ${license}
