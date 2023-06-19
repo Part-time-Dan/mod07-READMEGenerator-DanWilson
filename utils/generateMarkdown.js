@@ -19,15 +19,14 @@ function renderLicenseBadge(license) {
       break;
 
     default:
-      // console.log('N/A');
+      // if user chooses 'N/A' from choice list, show no badge
+      license = '' 
 
   }
 
   return license;
 
 }
-
-// renderLicenseBadge();
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
