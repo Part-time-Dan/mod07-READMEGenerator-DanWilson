@@ -1,20 +1,5 @@
-# test
-
-## Description
-undefined
-
-## Installation
-undefined
-
-## Usage
-undefined
-
-## Contributing
-undefined
-
-## Tests
-undefined
+Apache 2.0
 
 ## License
-GPLv3
+Apache 2.0
 

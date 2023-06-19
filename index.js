@@ -57,13 +57,14 @@ function writeToFile(fileName, data) { //how should I be calling "data" here?
     inquirer
     .prompt(questions)
     .then((answer) => {
-
+        // const license = `${answer.lisence}`
         const newFile = generateMarkdown(answer);
+        // console.log(license);
         console.log(newFile);
 
-        // fs.writeFile(fileName, newFile, (err) =>
-        // err ? console.log(err) : console.log('Successfully created README!')
-        // )
+        fs.writeFile(fileName, newFile, (err) =>
+        err ? console.log(err) : console.log('Successfully created README!')
+        )
     }
     )
 
