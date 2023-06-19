@@ -3,13 +3,14 @@ const inquirer = require('inquirer');
 const fs = require('fs');
 
 const generateMarkdown = require('./utils/generateMarkdown');
+
 // TODO: Create an array of questions for user input
 const questions = [
-    {
-        type: 'input',
-        name: 'title',
-        message: 'What is the title of this project?',
-    },
+    // {
+    //     type: 'input',
+    //     name: 'title',
+    //     message: 'What is the title of this project?',
+    // },
     // {
     //     type: 'input',
     //     name: 'description',
@@ -42,25 +43,29 @@ const questions = [
         choices: [
             "MIT",
             "Apache 2.0",
-            "GPLv3"
+            "GPLv3",
+            "N/A"
         ],
     },
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) { //data is given in starter code, ask TA how I supposed to call this? Should inquirer have gone somewhere else?
+function writeToFile(fileName, data) { //how should I be calling "data" here? 
 
-    fileName = "README.md"; // will name the file "README.md" which is universally understood as the standard
-    console.log(fileName);
+    fileName = "README.md"; // will name the file "README.md" which is industry standard
+
     inquirer
     .prompt(questions)
-    .then((data) => {
-        const newFile = generateMarkdown(data);
+    .then((answer) => {
 
-        fs.writeFile(fileName, newFile, (err) =>
-        err ? console.log(err) : console.log('Successfully created README!')
-        )
-    })
+        const newFile = generateMarkdown(answer);
+        console.log(newFile);
+
+        // fs.writeFile(fileName, newFile, (err) =>
+        // err ? console.log(err) : console.log('Successfully created README!')
+        // )
+    }
+    )
 
 };
 // TODO: Create a function to initialize app
