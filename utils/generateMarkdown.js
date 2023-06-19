@@ -77,7 +77,6 @@ ${data.description}
 - [Questions](#questions)
 - [License](#license)
 
-
 ## Installation
 ${data.installation}
 
@@ -93,11 +92,12 @@ ${data.tests}
 ## Questions
 If you have questions about this project:
 
-Find me on GitHub: [${data.github}](https://github.com/${data.github})
+
+Find me on GitHub-> [${data.github}](https://github.com/${data.github})
 
 OR
 
-Reach me by email here: [${data.email}](mailto:${data.email})
+Reach me by email here-> [${data.email}](mailto:${data.email})
 
 ${renderLicenseSection()}
 `;
