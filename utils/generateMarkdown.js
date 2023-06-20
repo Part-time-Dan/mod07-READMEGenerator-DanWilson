@@ -53,7 +53,7 @@ function renderLicenseSection(license) {
     var license = 
 `
 ## License
-For additional license information, please follow the link: $[${licenseValue}]${licenseLink}
+For additional license information, please follow the link: [${licenseValue}]${licenseLink}
 `;
   };
 
