@@ -68,8 +68,8 @@ function writeToFile(fileName, data) { //how should I be calling "data" here?
     .prompt(questions)
     .then((answer) => {
         const newFile = generateMarkdown(answer);
-        console.log(newFile);
 
+        // node fs method writes new file to main directory, and returns error report or success message using a conditional ternary operator
         fs.writeFile(fileName, newFile, (err) =>
         err ? console.log(err) : console.log('Successfully created README!')
         )

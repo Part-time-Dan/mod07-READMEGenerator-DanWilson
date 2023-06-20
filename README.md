@@ -1,9 +1,9 @@
 
-
-# test
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://choosealicense.com/licenses/mit/)
+# t
 
 ## Description
-check to see if selecting no license renders correctly in readme
+t
 
 ## Table of Contents
 - [Installation](#installation)
@@ -14,25 +14,28 @@ check to see if selecting no license renders correctly in readme
 - [License](#license)
 
 ## Installation
-test
+t
 
 ## Usage
-test
+t
 
 ## Contributions
-test
+t
 
 ## Tests
-test
+t
 
 ## Questions
 If you have questions about this project:
 
 
-Find me on GitHub-> [test](https://github.com/test)
+Find me on GitHub-> [t](https://github.com/t)
 
 OR
 
-Reach me by email here-> [test](mailto:test)
+Reach me by email here-> [t](mailto:t)
 
+
+## License
+For additional license information, please follow the link: $[MIT](https://choosealicense.com/licenses/mit/)
 

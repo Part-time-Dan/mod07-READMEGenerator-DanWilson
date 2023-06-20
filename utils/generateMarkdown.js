@@ -29,16 +29,20 @@ function renderLicenseBadge(license) {
 
     default:
       console.log("Whoops!");
-  }
+  };
   return license;
-}
+};
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
-  var license = `[${licenseValue}]${licenseLink}`
+  if(`${licenseValue}` == '') {
+    var license = ''
+  } else {
+    var license = `- [License](#license)`
+  };
   return license;
-}
+};
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
@@ -49,12 +53,12 @@ function renderLicenseSection(license) {
     var license = 
 `
 ## License
-For additional license information, please follow the link: ${renderLicenseLink(license)}
+For additional license information, please follow the link: $[${licenseValue}]${licenseLink}
 `;
-  }
+  };
 
   return license;
-}
+};
 
 
 // TODO: Create a function to generate markdown for README
@@ -75,7 +79,7 @@ ${data.description}
 - [Contributions](#contributions)
 - [Tests](#tests)
 - [Questions](#questions)
-- [License](#license)
+${renderLicenseLink()}
 
 ## Installation
 ${data.installation}
@@ -105,5 +109,3 @@ ${renderLicenseSection()}
 };
 
 module.exports = generateMarkdown;
-
-
