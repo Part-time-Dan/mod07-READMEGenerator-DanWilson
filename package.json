@@ -1,0 +1,23 @@
+{
+  "name": "mod09-readmegenerator-danwilson",
+  "version": "1.0.0",
+  "description": "The goal of this project is to create a program in Node.js that takes user inputs and outputs a new README",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Part-time-Dan/mod09-READMEGenerator-DanWilson.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Part-time-Dan/mod09-READMEGenerator-DanWilson/issues"
+  },
+  "homepage": "https://github.com/Part-time-Dan/mod09-READMEGenerator-DanWilson#readme",
+  "dependencies": {
+    "inquirer": "^8.2.4"
+  }
+}
