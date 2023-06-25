@@ -36,3 +36,6 @@ Reach me by email here -> [danielwilson.web@gmail.com](mailto:danielwilson.web@g
 
 ## License
 For additional license information, please follow the link: [MIT](https://choosealicense.com/licenses/mit/)
+
+## Video
+[Mod09READMEGen-DanWilson.webm](https://github.com/Part-time-Dan/mod09-READMEGenerator-DanWilson/assets/126934952/683b5d41-9b89-4ca5-a7cb-1b4a1de8bcae)
